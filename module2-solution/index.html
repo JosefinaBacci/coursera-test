@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name ="viewport" content="width=devide-width", initial-scale=1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Assignment Solution for Molude 2</title>
 <style>
 *{
@@ -102,21 +102,81 @@ h1{
   margin-top: 30px;
 }
 
+.row{
+  width: 100%;
+}
+
+@media (min-width: 1200px){
+  .col-lg-1,.col-lg-2,.col-lg-3{
+    float:left;
+  } 
+
+  .col-lg-1{
+    width: 33.33%;
+  }
+
+  .col-lg-2{
+    width: 33.33%;
+  }
+
+  .col-lg-3{
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width:991px){
+ .col-lg-1,.col-lg-2,.col-lg-3{
+    float:left;
+  } 
+
+  .col-lg-1{
+    width: 33.33%;
+  }
+
+  .col-lg-2{
+    width: 33.33%;
+  }
+
+  .col-lg-3{
+    width: 33.33%;
+  }
+
+}
+
+@media(max-width:768px){
+  .col-lg-1,.col-lg-2,.col-lg-3{
+    float:left;
+  } 
+
+  .col-lg-1{
+    width: 33.33%;
+  }
+
+  .col-lg-2{
+    width: 33.33%;
+  }
+
+  .col-lg-3{
+    width: 33.33%;
+  }
+
+}
+
 </style>
 </head>
 <body>
 
 <h1>Our menu</h1>
-<div class="container">
-	<div class="box", id="box2">
+<div class="container", class="row">
+	<div class="box", id="box2", class="col-lg-1">
 		<p class="top-right-text", id="p1">Chicken</p>
 	Iorem ipsum dolor sit amet, consectetur adipisicing elit, ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eniam, quis nostrud excercitation ullamco labirs nisi ut aliquip ex ea commodo consequat.</div>
 
-	<div class="box", id="box">
+	<div class="box", id="box", class="col-lg-2">
 		<p class="top-right-text", id="p2">Beef</p>
 	Iorem ipsum dolor sit amet, consectetur adipisicing elit, ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eniam, quis nostrud excercitation ullamco labirs nisi ut aliquip ex ea commodo consequat.</div>
 
-	<div class="box", id="box">
+	<div class="box", id="box", class="col-lg-3">
 		<p class="top-right-text", id="p3">Sushi</p>
 	Iorem ipsum dolor sit amet, consectetur adipisicing elit, ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eniam, quis nostrud excercitation ullamco labirs nisi ut aliquip ex ea commodo consequat.</div>
 </div>
