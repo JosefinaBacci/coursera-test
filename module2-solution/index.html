@@ -3,182 +3,158 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Assignment Solution for Molude 2</title>
+<title>Assignment Solution for Module 2</title>
 <style>
-*{
-	margin: 4;
-	padding: 3;
-	box-sizing: border-box;
+* {
+    margin: 4px;
+    padding: 3px;
+    box-sizing: border-box;
 }
 
-body{
-	background-color: lightseagreene;
-	font-size: 120%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100vh;
+body {
+    background-color: antiquewhite;
+    font-size: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
 }
 
-#box{
-	margin: 25px;
-	background-color: beige;
-	padding: 30px 20px 20px 20px;
-	border: 3px solid orangered;
-	width: 400px;
-	height: 200px;
-}	
+#box {
+    margin: 25px;
+    background-color: beige;
+    padding: 30px 20px 20px 20px;
+    border: 3px solid orangered;
+    width: 400px;
+    height: 200px;
+}   
 
-#box2{
-	margin: 25px;
-	background-color: beige;
-	padding: 30px 10px 20px 20px;
-	border: 3px solid orangered;
-	width: 400px;
-	height: 200px;
+#box2 {
+    margin: 25px;
+    background-color: beige;
+    padding: 30px 10px 20px 20px;
+    border: 3px solid orangered;
+    width: 400px;
+    height: 200px;
 }
 
-p{
-	width: 40%;
-	border-bottom: 3px solid orangered;
-	border-left: 3px solid orangered;
-	text-align: center;
-}	
+p {
+    width: 40%;
+    border-bottom: 3px solid orangered;
+    border-left: 3px solid orangered;
+    text-align: center;
+}   
 
-#p1{
-	font-family: "Comic Sans MS", cursive,sans-serif;
-	font-weight:bold;
-	font-size: 17px;
-	background-color: orange;
+#p1 {
+    font-family: "Comic Sans MS", cursive,sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: orange;
 }
 
-#p2{
-	font-family: "Comic Sans MS", cursive,sans-serif;
-	font-weight:bold;
-	font-size: 17px;
-	background-color: lightgreen;
+#p2 {
+    font-family: "Comic Sans MS", cursive,sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: lightgreen;
 }
 
-#p3{
-	font-family: "Comic Sans MS", cursive,sans-serif;
-	font-weight:bold;
-	font-size: 17px;
-	background-color: turquoise;
+#p3 {
+    font-family: "Comic Sans MS", cursive,sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: turquoise;
 }
 
 .top-right-text {
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin: 0px;
- }
-
-h1{
-	font-family: "Comic Sans MS", cursive,sans-serif;
-	font-weight:500;
-	font-size: 40px;
-	text-align: center;
-	color: orangered;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0px;
 }
 
-.box{
-	font-family: "Comic Sans MS", cursive,sans-serif;
-	font-weight:500;
-	font-size: 17px;
-	text-align: justify;
-	position: relative;
-	float: left;
-	display: flex;
- 	align-items: center;
+h1 {
+    font-family: "Comic Sans MS", cursive,sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    color: orangered;
 }
 
+.box {
+    font-family: "Comic Sans MS", cursive,sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: justify;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.row{
-  width: 100%;
+.col-lg-1, .col-lg-2, .col-lg-3 {
+    float: left;
 }
 
-@media (min-width: 1200px){
-  .col-lg-1,.col-lg-2,.col-lg-3{
-    float:left;
-  } 
-
-  .col-lg-1{
+.col-lg-1 {
     width: 33.33%;
-  }
+}
 
-  .col-lg-2{
+.col-lg-2 {
     width: 33.33%;
-  }
+}
 
-  .col-lg-3{
+.col-lg-3 {
     width: 100%;
-  }
 }
 
-@media (min-width: 768px) and (max-width:991px){
- .col-lg-1,.col-lg-2,.col-lg-3{
-    float:left;
-  } 
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-lg-1, .col-lg-2, .col-lg-3 {
+        float: left;
+    } 
 
-  .col-lg-1{
-    width: 33.33%;
-  }
-
-  .col-lg-2{
-    width: 33.33%;
-  }
-
-  .col-lg-3{
-    width: 33.33%;
-  }
-
+    .col-lg-1, .col-lg-2, .col-lg-3 {
+        width: 33.33%;
+    }
 }
 
-@media(max-width:768px){
-  .col-lg-1,.col-lg-2,.col-lg-3{
-    float:left;
-  } 
+@media (max-width: 768px) {
+    .col-lg-1, .col-lg-2, .col-lg-3 {
+        float: left;
+    } 
 
-  .col-lg-1{
-    width: 33.33%;
-  }
-
-  .col-lg-2{
-    width: 33.33%;
-  }
-
-  .col-lg-3{
-    width: 33.33%;
-  }
-
+    .col-lg-1, .col-lg-2, .col-lg-3 {
+        width: 33.33%;
+    }
 }
-
 </style>
 </head>
 <body>
 
 <h1>Our menu</h1>
-<div class="container", class="row">
-	<div class="box", id="box2", class="col-lg-1">
-		<p class="top-right-text", id="p1">Chicken</p>
-	Iorem ipsum dolor sit amet, consectetur adipisicing elit, ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eniam, quis nostrud excercitation ullamco labirs nisi ut aliquip ex ea commodo consequat.</div>
+<div class="container row">
+    <div class="box col-lg-1" id="box2">
+        <p class="top-right-text" id="p1">Chicken</p>
+        Iorem ipsum dolor sit amet, consectetur adipisicing elit, ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eniam, quis nostrud excercitation ullamco labirs nisi ut aliquip ex ea commodo consequat.
+    </div>
 
-	<div class="box", id="box", class="col-lg-2">
-		<p class="top-right-text", id="p2">Beef</p>
-	Iorem ipsum dolor sit amet, consectetur adipisicing elit, ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eniam, quis nostrud excercitation ullamco labirs nisi ut aliquip ex ea commodo consequat.</div>
+    <div class="box col-lg-2" id="box">
+        <p class="top-right-text" id="p2">Beef</p>
+        Iorem ipsum dolor sit amet, consectetur adipisicing elit, ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eniam, quis nostrud excercitation ullamco labirs nisi ut aliquip ex ea commodo consequat.
+    </div>
 
-	<div class="box", id="box", class="col-lg-3">
-		<p class="top-right-text", id="p3">Sushi</p>
-	Iorem ipsum dolor sit amet, consectetur adipisicing elit, ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eniam, quis nostrud excercitation ullamco labirs nisi ut aliquip ex ea commodo consequat.</div>
+    <div class="box col-lg-3" id="box">
+        <p class="top-right-text" id="p3">Sushi</p>
+        Iorem ipsum dolor sit amet, consectetur adipisicing elit, ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eniam, quis nostrud excercitation ullamco labirs nisi ut aliquip ex ea commodo consequat.
+    </div>
 </div>
 
 </body>
